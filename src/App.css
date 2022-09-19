@@ -6,6 +6,9 @@
 .layout {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .select-container {
@@ -39,7 +42,6 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 40%;
   align-items: center;
 }
 
@@ -65,8 +67,8 @@
   background-color: azure;
   color: darkblue;
 }
-
+/* 
 .table-container {
   display: flex;
   justify-content: center;
-}
+} */

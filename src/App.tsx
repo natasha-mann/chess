@@ -4,7 +4,7 @@ import canMove, { pieces } from "./utils";
 import "./App.css";
 import { ChessBoard } from "./components/ChessBoard";
 
-enum ValidMove {
+export enum ValidMove {
   "true",
   "false",
   "unset",
@@ -65,9 +65,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Chess Move Validator</h1>
       <div className="layout">
         <form onSubmit={handleSubmit} className="form">
+          <h1>Chess Move Validator</h1>
           <div className="select-container">
             <div className="select">
               <label>Which colour are you playing as?</label>
@@ -143,6 +143,7 @@ function App() {
             handleSelectSquare={handleSelectSquare}
             startSquare={startSquare}
             endSquare={endSquare}
+            validMove={validMove}
           />
         </div>
       </div>
