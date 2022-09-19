@@ -1,16 +1,36 @@
 # CHESS
 
-The task this week is to create a function which takes the name of a chess piece, its position on a board and an intended destination. The function should return true if the piece can move to the destination, or false if it can't. You can assume that the piece is the only piece on the board and that it is a White piece.
+This app takes the name of a chess piece, the colour of the piece, its current position on a board and an intended destination and will confirm if the move is valid or not. It assumes that the piece is the only piece on the board.
 
-### Rewards:
+### Live App
 
-4️⃣ Points are awarded for a working algorithm capable of validating these sample moves.
+The app is hosted on GitHub pages [here](https://natasha-mann.github.io/chess).
 
-3️⃣ Further points are awarded for illustrating the movement with a simple user interface.
+### Run Locally
 
-2️⃣ Further points are awarded for providing at least one unit test.
+If you want to run the app locally, clone the repo and install the packages:
 
-1️⃣ Further point is awarded for providing support for the Black pieces (your function should accept an additional 'colour' parameter).
+```
+git clone git@github.com:natasha-mann/chess.git
+cd chess
+npm i
+```
+
+To run the application:
+
+```
+npm run start
+```
+
+### Tests
+
+There are several unit tests for the functionality of the chess board, located in `src/utils/index.test.tsx`
+
+These can be run with:
+
+```
+npm run jest
+```
 
 ### Notes:
 

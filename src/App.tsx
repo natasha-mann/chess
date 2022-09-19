@@ -130,11 +130,12 @@ function App() {
               Reset Board
             </button>
           </div>
-          {validMove === ValidMove.true && (
-            <h2>This is a valid move!! Great Job!</h2>
-          )}
+          {validMove === ValidMove.true && <h2>This is a valid move!</h2>}
           {validMove === ValidMove.false && (
-            <h2>This is not a valid move!! Try again.</h2>
+            <>
+              <h2>This is not a valid move.</h2>
+              <h2>Try again!</h2>
+            </>
           )}
         </form>
 
