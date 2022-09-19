@@ -78,7 +78,11 @@ function App() {
       {validMove === ValidMove.false && (
         <h1>This is not a valid move!! Try again.</h1>
       )}
-      <ChessBoard handleSelectSquare={handleSelectSquare} />
+      <ChessBoard
+        handleSelectSquare={handleSelectSquare}
+        startSquare={startSquare}
+        endSquare={endSquare}
+      />
     </div>
   );
 }
