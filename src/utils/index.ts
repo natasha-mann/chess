@@ -1,13 +1,13 @@
+export const validColumns = ["A", "B", "C", "D", "E", "F", "G", "H"];
+export const validRows = [1, 2, 3, 4, 5, 6, 7, 8];
+export const pieces = ["pawn", "rook", "king", "queen", "knight", "bishop"];
+
 export default function canMove(
   piece: string,
   start: string,
   end: string,
   colour: string = "white"
 ): Boolean {
-  const validColumns = ["A", "B", "C", "D", "E", "F", "G", "H"];
-  const validRows = [1, 2, 3, 4, 5, 6, 7, 8];
-  const pieces = ["pawn", "rook", "king", "queen", "knight", "bishop"];
-
   const [startCol, sRow] = start.split("");
   const [endCol, eRow] = end.split("");
 
