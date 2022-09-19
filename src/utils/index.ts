@@ -3,7 +3,7 @@ export default function canMove(
   start: string,
   end: string,
   colour: string = "white"
-) {
+): Boolean {
   const validColumns = ["A", "B", "C", "D", "E", "F", "G", "H"];
   const validRows = [1, 2, 3, 4, 5, 6, 7, 8];
   const pieces = ["pawn", "rook", "king", "queen", "knight", "bishop"];
@@ -111,4 +111,6 @@ export default function canMove(
     if (diagonalMove) return true;
     return false;
   }
+
+  return false;
 }
