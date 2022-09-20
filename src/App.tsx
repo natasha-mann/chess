@@ -117,13 +117,11 @@ function App() {
           )}
 
           <div className="chosen">
-            <h3 className="chosen-text">
-              Starting square = <span className="red">{startSquare}</span>
-            </h3>
-
-            <h3 className="chosen-text">
-              End square = <span className="red">{endSquare}</span>
-            </h3>
+            {colour && piece && startSquare && endSquare && (
+              <h2>
+                Move my {colour} {piece} from {startSquare} to {endSquare}
+              </h2>
+            )}
           </div>
 
           {error && (

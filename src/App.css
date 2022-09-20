@@ -24,6 +24,7 @@
 
 .chosen {
   display: flex;
+  color: darkblue;
 }
 
 .chosen-text {
