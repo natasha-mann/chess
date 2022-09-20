@@ -77,8 +77,9 @@ function App() {
           <h1>Chess Move Validator</h1>
           <div className="select-container">
             <div className="select">
-              <label>Which colour are you playing as?</label>
+              <label htmlFor="colour">Which colour are you playing as?</label>
               <select
+                id="colour"
                 onChange={handleColour}
                 className="select"
                 value={colour || ""}
@@ -90,8 +91,9 @@ function App() {
               </select>
             </div>
             <div className="select">
-              <label>Which piece are you moving?</label>
+              <label htmlFor="piece">Which piece are you moving?</label>
               <select
+                id="piece"
                 onChange={handlePiece}
                 className="select"
                 value={piece || ""}
@@ -99,7 +101,11 @@ function App() {
               >
                 <option value="">Select a piece:</option>
                 {pieces.map((piece) => {
-                  return <option value={piece}>{piece}</option>;
+                  return (
+                    <option key={piece} value={piece}>
+                      {piece}
+                    </option>
+                  );
                 })}
               </select>
             </div>
@@ -118,7 +124,7 @@ function App() {
 
           <div className="chosen">
             {colour && piece && startSquare && endSquare && (
-              <h2>
+              <h2 data-testid="result">
                 Move my {colour} {piece} from {startSquare} to {endSquare}
               </h2>
             )}

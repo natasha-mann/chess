@@ -1,0 +1,1402 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`clicking the reset button should return the page to its original state  1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="App"
+      >
+        <div
+          class="layout"
+        >
+          <form
+            class="form"
+          >
+            <h1>
+              Chess Move Validator
+            </h1>
+            <div
+              class="select-container"
+            >
+              <div
+                class="select"
+              >
+                <label
+                  for="colour"
+                >
+                  Which colour are you playing as?
+                </label>
+                <select
+                  class="select"
+                  id="colour"
+                >
+                  <option
+                    value=""
+                  >
+                    Select a colour:
+                  </option>
+                  <option
+                    value="white"
+                  >
+                    White
+                  </option>
+                  <option
+                    value="black"
+                  >
+                    Black
+                  </option>
+                </select>
+              </div>
+              <div
+                class="select"
+              >
+                <label
+                  for="piece"
+                >
+                  Which piece are you moving?
+                </label>
+                <select
+                  class="select"
+                  id="piece"
+                >
+                  <option
+                    value=""
+                  >
+                    Select a piece:
+                  </option>
+                  <option
+                    value="pawn"
+                  >
+                    pawn
+                  </option>
+                  <option
+                    value="rook"
+                  >
+                    rook
+                  </option>
+                  <option
+                    value="king"
+                  >
+                    king
+                  </option>
+                  <option
+                    value="queen"
+                  >
+                    queen
+                  </option>
+                  <option
+                    value="knight"
+                  >
+                    knight
+                  </option>
+                  <option
+                    value="bishop"
+                  >
+                    bishop
+                  </option>
+                </select>
+              </div>
+            </div>
+            <h3
+              class="instruction"
+            >
+              Please select your starting square by clicking on the board.
+            </h3>
+            <div
+              class="chosen"
+            />
+            <div>
+              <button
+                class="button"
+                type="submit"
+              >
+                Play!
+              </button>
+              <button
+                class="button"
+                type="button"
+              >
+                Reset Board
+              </button>
+            </div>
+          </form>
+          <div
+            class="table-container"
+          >
+            <table
+              class="table"
+            >
+              <tbody>
+                <tr
+                  class="row"
+                >
+                  <th
+                    class="square"
+                  >
+                     
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    A
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    B
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    C
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    D
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    E
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    F
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    G
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    H
+                  </th>
+                  <th
+                    class="square"
+                  >
+                     
+                  </th>
+                </tr>
+                <tr
+                  class="row"
+                >
+                  <td
+                    class="square"
+                  >
+                    8
+                  </td>
+                  <td
+                    class="square even border   "
+                    data-testid="A8"
+                    id="A8"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="B8"
+                    id="B8"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="C8"
+                    id="C8"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="D8"
+                    id="D8"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="E8"
+                    id="E8"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="F8"
+                    id="F8"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="G8"
+                    id="G8"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="H8"
+                    id="H8"
+                  />
+                  <td
+                    class="square"
+                  >
+                    8
+                  </td>
+                </tr>
+                <tr
+                  class="row"
+                >
+                  <td
+                    class="square"
+                  >
+                    7
+                  </td>
+                  <td
+                    class="square odd border   "
+                    data-testid="A7"
+                    id="A7"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="B7"
+                    id="B7"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="C7"
+                    id="C7"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="D7"
+                    id="D7"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="E7"
+                    id="E7"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="F7"
+                    id="F7"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="G7"
+                    id="G7"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="H7"
+                    id="H7"
+                  />
+                  <td
+                    class="square"
+                  >
+                    7
+                  </td>
+                </tr>
+                <tr
+                  class="row"
+                >
+                  <td
+                    class="square"
+                  >
+                    6
+                  </td>
+                  <td
+                    class="square even border   "
+                    data-testid="A6"
+                    id="A6"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="B6"
+                    id="B6"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="C6"
+                    id="C6"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="D6"
+                    id="D6"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="E6"
+                    id="E6"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="F6"
+                    id="F6"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="G6"
+                    id="G6"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="H6"
+                    id="H6"
+                  />
+                  <td
+                    class="square"
+                  >
+                    6
+                  </td>
+                </tr>
+                <tr
+                  class="row"
+                >
+                  <td
+                    class="square"
+                  >
+                    5
+                  </td>
+                  <td
+                    class="square odd border   "
+                    data-testid="A5"
+                    id="A5"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="B5"
+                    id="B5"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="C5"
+                    id="C5"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="D5"
+                    id="D5"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="E5"
+                    id="E5"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="F5"
+                    id="F5"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="G5"
+                    id="G5"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="H5"
+                    id="H5"
+                  />
+                  <td
+                    class="square"
+                  >
+                    5
+                  </td>
+                </tr>
+                <tr
+                  class="row"
+                >
+                  <td
+                    class="square"
+                  >
+                    4
+                  </td>
+                  <td
+                    class="square even border   "
+                    data-testid="A4"
+                    id="A4"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="B4"
+                    id="B4"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="C4"
+                    id="C4"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="D4"
+                    id="D4"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="E4"
+                    id="E4"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="F4"
+                    id="F4"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="G4"
+                    id="G4"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="H4"
+                    id="H4"
+                  />
+                  <td
+                    class="square"
+                  >
+                    4
+                  </td>
+                </tr>
+                <tr
+                  class="row"
+                >
+                  <td
+                    class="square"
+                  >
+                    3
+                  </td>
+                  <td
+                    class="square odd border   "
+                    data-testid="A3"
+                    id="A3"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="B3"
+                    id="B3"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="C3"
+                    id="C3"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="D3"
+                    id="D3"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="E3"
+                    id="E3"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="F3"
+                    id="F3"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="G3"
+                    id="G3"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="H3"
+                    id="H3"
+                  />
+                  <td
+                    class="square"
+                  >
+                    3
+                  </td>
+                </tr>
+                <tr
+                  class="row"
+                >
+                  <td
+                    class="square"
+                  >
+                    2
+                  </td>
+                  <td
+                    class="square even border   "
+                    data-testid="A2"
+                    id="A2"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="B2"
+                    id="B2"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="C2"
+                    id="C2"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="D2"
+                    id="D2"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="E2"
+                    id="E2"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="F2"
+                    id="F2"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="G2"
+                    id="G2"
+                  />
+                  <td
+                    class="square even border   "
+                    data-testid="H2"
+                    id="H2"
+                  />
+                  <td
+                    class="square"
+                  >
+                    2
+                  </td>
+                </tr>
+                <tr
+                  class="row"
+                >
+                  <td
+                    class="square"
+                  >
+                    1
+                  </td>
+                  <td
+                    class="square odd border   "
+                    data-testid="A1"
+                    id="A1"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="B1"
+                    id="B1"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="C1"
+                    id="C1"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="D1"
+                    id="D1"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="E1"
+                    id="E1"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="F1"
+                    id="F1"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="G1"
+                    id="G1"
+                  />
+                  <td
+                    class="square odd border   "
+                    data-testid="H1"
+                    id="H1"
+                  />
+                  <td
+                    class="square"
+                  >
+                    1
+                  </td>
+                </tr>
+                <tr
+                  class="row"
+                >
+                  <th
+                    class="square"
+                  >
+                     
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    A
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    B
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    C
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    D
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    E
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    F
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    G
+                  </th>
+                  <th
+                    class="square"
+                  >
+                    H
+                  </th>
+                  <th
+                    class="square"
+                  >
+                     
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="App"
+    >
+      <div
+        class="layout"
+      >
+        <form
+          class="form"
+        >
+          <h1>
+            Chess Move Validator
+          </h1>
+          <div
+            class="select-container"
+          >
+            <div
+              class="select"
+            >
+              <label
+                for="colour"
+              >
+                Which colour are you playing as?
+              </label>
+              <select
+                class="select"
+                id="colour"
+              >
+                <option
+                  value=""
+                >
+                  Select a colour:
+                </option>
+                <option
+                  value="white"
+                >
+                  White
+                </option>
+                <option
+                  value="black"
+                >
+                  Black
+                </option>
+              </select>
+            </div>
+            <div
+              class="select"
+            >
+              <label
+                for="piece"
+              >
+                Which piece are you moving?
+              </label>
+              <select
+                class="select"
+                id="piece"
+              >
+                <option
+                  value=""
+                >
+                  Select a piece:
+                </option>
+                <option
+                  value="pawn"
+                >
+                  pawn
+                </option>
+                <option
+                  value="rook"
+                >
+                  rook
+                </option>
+                <option
+                  value="king"
+                >
+                  king
+                </option>
+                <option
+                  value="queen"
+                >
+                  queen
+                </option>
+                <option
+                  value="knight"
+                >
+                  knight
+                </option>
+                <option
+                  value="bishop"
+                >
+                  bishop
+                </option>
+              </select>
+            </div>
+          </div>
+          <h3
+            class="instruction"
+          >
+            Please select your starting square by clicking on the board.
+          </h3>
+          <div
+            class="chosen"
+          />
+          <div>
+            <button
+              class="button"
+              type="submit"
+            >
+              Play!
+            </button>
+            <button
+              class="button"
+              type="button"
+            >
+              Reset Board
+            </button>
+          </div>
+        </form>
+        <div
+          class="table-container"
+        >
+          <table
+            class="table"
+          >
+            <tbody>
+              <tr
+                class="row"
+              >
+                <th
+                  class="square"
+                >
+                   
+                </th>
+                <th
+                  class="square"
+                >
+                  A
+                </th>
+                <th
+                  class="square"
+                >
+                  B
+                </th>
+                <th
+                  class="square"
+                >
+                  C
+                </th>
+                <th
+                  class="square"
+                >
+                  D
+                </th>
+                <th
+                  class="square"
+                >
+                  E
+                </th>
+                <th
+                  class="square"
+                >
+                  F
+                </th>
+                <th
+                  class="square"
+                >
+                  G
+                </th>
+                <th
+                  class="square"
+                >
+                  H
+                </th>
+                <th
+                  class="square"
+                >
+                   
+                </th>
+              </tr>
+              <tr
+                class="row"
+              >
+                <td
+                  class="square"
+                >
+                  8
+                </td>
+                <td
+                  class="square even border   "
+                  data-testid="A8"
+                  id="A8"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="B8"
+                  id="B8"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="C8"
+                  id="C8"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="D8"
+                  id="D8"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="E8"
+                  id="E8"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="F8"
+                  id="F8"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="G8"
+                  id="G8"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="H8"
+                  id="H8"
+                />
+                <td
+                  class="square"
+                >
+                  8
+                </td>
+              </tr>
+              <tr
+                class="row"
+              >
+                <td
+                  class="square"
+                >
+                  7
+                </td>
+                <td
+                  class="square odd border   "
+                  data-testid="A7"
+                  id="A7"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="B7"
+                  id="B7"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="C7"
+                  id="C7"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="D7"
+                  id="D7"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="E7"
+                  id="E7"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="F7"
+                  id="F7"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="G7"
+                  id="G7"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="H7"
+                  id="H7"
+                />
+                <td
+                  class="square"
+                >
+                  7
+                </td>
+              </tr>
+              <tr
+                class="row"
+              >
+                <td
+                  class="square"
+                >
+                  6
+                </td>
+                <td
+                  class="square even border   "
+                  data-testid="A6"
+                  id="A6"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="B6"
+                  id="B6"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="C6"
+                  id="C6"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="D6"
+                  id="D6"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="E6"
+                  id="E6"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="F6"
+                  id="F6"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="G6"
+                  id="G6"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="H6"
+                  id="H6"
+                />
+                <td
+                  class="square"
+                >
+                  6
+                </td>
+              </tr>
+              <tr
+                class="row"
+              >
+                <td
+                  class="square"
+                >
+                  5
+                </td>
+                <td
+                  class="square odd border   "
+                  data-testid="A5"
+                  id="A5"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="B5"
+                  id="B5"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="C5"
+                  id="C5"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="D5"
+                  id="D5"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="E5"
+                  id="E5"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="F5"
+                  id="F5"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="G5"
+                  id="G5"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="H5"
+                  id="H5"
+                />
+                <td
+                  class="square"
+                >
+                  5
+                </td>
+              </tr>
+              <tr
+                class="row"
+              >
+                <td
+                  class="square"
+                >
+                  4
+                </td>
+                <td
+                  class="square even border   "
+                  data-testid="A4"
+                  id="A4"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="B4"
+                  id="B4"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="C4"
+                  id="C4"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="D4"
+                  id="D4"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="E4"
+                  id="E4"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="F4"
+                  id="F4"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="G4"
+                  id="G4"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="H4"
+                  id="H4"
+                />
+                <td
+                  class="square"
+                >
+                  4
+                </td>
+              </tr>
+              <tr
+                class="row"
+              >
+                <td
+                  class="square"
+                >
+                  3
+                </td>
+                <td
+                  class="square odd border   "
+                  data-testid="A3"
+                  id="A3"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="B3"
+                  id="B3"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="C3"
+                  id="C3"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="D3"
+                  id="D3"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="E3"
+                  id="E3"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="F3"
+                  id="F3"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="G3"
+                  id="G3"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="H3"
+                  id="H3"
+                />
+                <td
+                  class="square"
+                >
+                  3
+                </td>
+              </tr>
+              <tr
+                class="row"
+              >
+                <td
+                  class="square"
+                >
+                  2
+                </td>
+                <td
+                  class="square even border   "
+                  data-testid="A2"
+                  id="A2"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="B2"
+                  id="B2"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="C2"
+                  id="C2"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="D2"
+                  id="D2"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="E2"
+                  id="E2"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="F2"
+                  id="F2"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="G2"
+                  id="G2"
+                />
+                <td
+                  class="square even border   "
+                  data-testid="H2"
+                  id="H2"
+                />
+                <td
+                  class="square"
+                >
+                  2
+                </td>
+              </tr>
+              <tr
+                class="row"
+              >
+                <td
+                  class="square"
+                >
+                  1
+                </td>
+                <td
+                  class="square odd border   "
+                  data-testid="A1"
+                  id="A1"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="B1"
+                  id="B1"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="C1"
+                  id="C1"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="D1"
+                  id="D1"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="E1"
+                  id="E1"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="F1"
+                  id="F1"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="G1"
+                  id="G1"
+                />
+                <td
+                  class="square odd border   "
+                  data-testid="H1"
+                  id="H1"
+                />
+                <td
+                  class="square"
+                >
+                  1
+                </td>
+              </tr>
+              <tr
+                class="row"
+              >
+                <th
+                  class="square"
+                >
+                   
+                </th>
+                <th
+                  class="square"
+                >
+                  A
+                </th>
+                <th
+                  class="square"
+                >
+                  B
+                </th>
+                <th
+                  class="square"
+                >
+                  C
+                </th>
+                <th
+                  class="square"
+                >
+                  D
+                </th>
+                <th
+                  class="square"
+                >
+                  E
+                </th>
+                <th
+                  class="square"
+                >
+                  F
+                </th>
+                <th
+                  class="square"
+                >
+                  G
+                </th>
+                <th
+                  class="square"
+                >
+                  H
+                </th>
+                <th
+                  class="square"
+                >
+                   
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

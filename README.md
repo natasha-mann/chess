@@ -24,12 +24,12 @@ npm run start
 
 ### Tests
 
-There are several unit tests for the functionality of the chess board, located in `src/utils/index.test.tsx`
+There are several unit tests for the functionality of the chess board, located in `src/utils/index.test.tsx` along with React tests for the UI components.
 
 These can be run with:
 
 ```
-npm run jest
+npm run test
 ```
 
 ### Notes:

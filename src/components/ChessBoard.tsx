@@ -1,5 +1,6 @@
 import { ValidMove } from "../App";
 import styles from "./chessboard.module.css";
+import { v4 as uuidv4 } from "uuid";
 
 interface ChessBoardProps {
   handleSelectSquare: (e: React.MouseEvent<HTMLElement>) => void;
@@ -23,10 +24,10 @@ export const ChessBoard = ({
   return (
     <table className={styles.table}>
       <tbody>
-        {rows.map((row) => {
+        {rows.map((row, index) => {
           return (
-            <tr key={row} className={styles.row}>
-              {columns.map((col) => {
+            <tr key={`${row}${index}`} className={styles.row}>
+              {columns.map((col, i) => {
                 const rowType = parseInt(row) % 2 === 0 ? "even" : "odd";
 
                 const selectedStart =
@@ -46,13 +47,13 @@ export const ChessBoard = ({
                 return (
                   <>
                     {(row === "9" || row === "0") && (
-                      <th key={row} className={styles.square}>
+                      <th key={`${index}${row}${i}`} className={styles.square}>
                         {col}
                       </th>
                     )}
 
                     {row !== "9" && row !== "0" && col === " " && (
-                      <td className={styles.square} key={row}>
+                      <td className={styles.square} key={`${row}${i}${index}`}>
                         {row}
                       </td>
                     )}
@@ -61,7 +62,8 @@ export const ChessBoard = ({
                       <td
                         className={`${styles.square} ${styles[rowType]} ${styles.border} ${selectedStart} ${selectedEnd} `}
                         id={col + row}
-                        key={col + row}
+                        data-testid={col + row}
+                        key={`${row}${i}${col}`}
                         onClick={handleSelectSquare}
                       >
                         {selectedStart === "selectedStartValid" && "START"}
