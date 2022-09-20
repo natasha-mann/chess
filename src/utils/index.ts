@@ -2,6 +2,24 @@ export const validColumns = ["A", "B", "C", "D", "E", "F", "G", "H"];
 export const validRows = [1, 2, 3, 4, 5, 6, 7, 8];
 export const pieces = ["pawn", "rook", "king", "queen", "knight", "bishop"];
 
+const validateInput = (
+  piece: string,
+  startCol: string,
+  endCol: string,
+  startRow: number,
+  endRow: number
+) => {
+  if (
+    validColumns.includes(startCol) &&
+    validColumns.includes(endCol) &&
+    validRows.includes(startRow) &&
+    validRows.includes(endRow) &&
+    pieces.includes(piece)
+  ) {
+    return true;
+  }
+};
+
 export default function canMove(
   piece: string,
   start: string,
@@ -26,21 +44,7 @@ export default function canMove(
   const oneColLeftOrRight =
     endColIndex === startColIndex + 1 || endColIndex === startColIndex - 1;
 
-  const isValidInput = (piece: string, start: string, end: string) => {
-    if (
-      !validColumns.includes(startCol) ||
-      !validColumns.includes(endCol) ||
-      !validRows.includes(startRow) ||
-      !validRows.includes(endRow) ||
-      !pieces.includes(piece)
-    ) {
-      return false;
-    }
-
-    return true;
-  };
-
-  if (!isValidInput(piece, start, end)) {
+  if (!validateInput(piece, startCol, endCol, startRow, endRow)) {
     throw new Error("Invalid Input");
   }
 
@@ -64,18 +68,14 @@ export default function canMove(
       endRow < startRow
     )
       return true;
-
-    return false;
   }
 
   if (piece === "rook") {
     if (sameCol || sameRow) return true;
-    return false;
   }
 
   if (piece === "bishop") {
     if (diagonalMove) return true;
-    return false;
   }
 
   if (piece === "king") {
@@ -85,8 +85,6 @@ export default function canMove(
       (oneColLeftOrRight && oneRowLeftOrRight)
     )
       return true;
-
-    return false;
   }
 
   if (piece === "knight") {
@@ -101,15 +99,10 @@ export default function canMove(
       (endColIndex === startColIndex - 2 || endColIndex === startColIndex + 2)
     )
       return true;
-
-    return false;
   }
 
   if (piece === "queen") {
-    if (sameCol) return true;
-    if (sameRow) return true;
-    if (diagonalMove) return true;
-    return false;
+    if (sameCol || sameRow || diagonalMove) return true;
   }
 
   return false;

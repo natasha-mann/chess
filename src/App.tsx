@@ -10,12 +10,17 @@ export enum ValidMove {
   "unset",
 }
 
+const constructImageClass = (piece: string, colour: string): string => {
+  return `${colour}${piece.charAt(0).toUpperCase() + piece.slice(1)}`;
+};
+
 function App() {
   const [piece, setPiece] = useState("");
   const [startSquare, setStartSquare] = useState("");
   const [endSquare, setEndSquare] = useState("");
   const [colour, setColour] = useState("");
   const [error, setError] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
   const [validMove, setValidMove] = useState(ValidMove.unset);
 
@@ -52,6 +57,7 @@ function App() {
     const isValid = result ? ValidMove.true : ValidMove.false;
 
     setValidMove(isValid);
+    setDisabled(true);
   };
 
   const resetBoard = () => {
@@ -61,6 +67,7 @@ function App() {
     setStartSquare("");
     setEndSquare("");
     setValidMove(ValidMove.unset);
+    setDisabled(false);
   };
 
   return (
@@ -75,6 +82,7 @@ function App() {
                 onChange={handleColour}
                 className="select"
                 value={colour || ""}
+                disabled={disabled}
               >
                 <option value="">Select a colour:</option>
                 <option value="white">White</option>
@@ -87,6 +95,7 @@ function App() {
                 onChange={handlePiece}
                 className="select"
                 value={piece || ""}
+                disabled={disabled}
               >
                 <option value="">Select a piece:</option>
                 {pieces.map((piece) => {
@@ -123,9 +132,11 @@ function App() {
             </h4>
           )}
           <div>
-            <button type="submit" className="button">
-              Play!
-            </button>
+            {validMove === ValidMove.unset && (
+              <button type="submit" className="button">
+                Play!
+              </button>
+            )}
             <button type="button" className="button" onClick={resetBoard}>
               Reset Board
             </button>
@@ -145,6 +156,7 @@ function App() {
             startSquare={startSquare}
             endSquare={endSquare}
             validMove={validMove}
+            imageClass={constructImageClass(piece, colour)}
           />
         </div>
       </div>

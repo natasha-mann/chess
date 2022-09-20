@@ -24,12 +24,64 @@
   color: white;
 }
 
-.selectedStart,
+.backgroundImg {
+  background-color: unset;
+  background-position: center;
+  background-size: cover;
+}
+
 .selectedEnd {
   background-color: red !important;
 }
 
-.selectedEndValid,
 .selectedStartValid {
-  background-color: green;
+  background-color: green !important;
+}
+
+.whitePawn {
+  background-image: url("../images/whitePawn.jpg");
+}
+
+.blackPawn {
+  background-image: url("../images/blackPawn.jpeg");
+}
+
+.blackBishop {
+  background-image: url("../images/blackBishop.jpg");
+}
+
+.whiteBishop {
+  background-image: url("../images/whiteBishop.jpg");
+}
+
+.blackRook {
+  background-image: url("../images/blackRook.jpg");
+}
+
+.whiteRook {
+  background-image: url("../images/whiteRook.jpg");
+}
+
+.whiteKing {
+  background-image: url("../images/whiteKing.jpg");
+}
+
+.blackKing {
+  background-image: url("../images/blackKing.png");
+}
+
+.blackQueen {
+  background-image: url("../images/blackQueen.jpg");
+}
+
+.whiteQueen {
+  background-image: url("../images/whiteQueen.jpg");
+}
+
+.blackKnight {
+  background-image: url("../images/blackKnight.jpg");
+}
+
+.whiteKnight {
+  background-image: url("../images/whiteKnight.jpg");
 }

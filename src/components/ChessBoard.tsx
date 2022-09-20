@@ -6,6 +6,7 @@ interface ChessBoardProps {
   startSquare: string;
   endSquare: string;
   validMove: ValidMove;
+  imageClass: string;
 }
 
 export const ChessBoard = ({
@@ -13,6 +14,7 @@ export const ChessBoard = ({
   startSquare,
   endSquare,
   validMove,
+  imageClass,
 }: ChessBoardProps) => {
   const columns = [" ", "A", "B", "C", "D", "E", "F", "G", "H", " "];
   const rows = ["9", "8", "7", "6", "5", "4", "3", "2", "1", "0"];
@@ -29,16 +31,16 @@ export const ChessBoard = ({
 
                 const selectedStart =
                   startSquare === col + row && valid
-                    ? "selectedStartValid"
+                    ? styles.selectedStartValid
                     : startSquare === col + row
-                    ? "selectedStart"
+                    ? `${styles[imageClass]} ${styles.backgroundImg}`
                     : "";
 
                 const selectedEnd =
                   endSquare === col + row && valid
-                    ? "selectedEndValid"
+                    ? `${styles[imageClass]} ${styles.backgroundImg}`
                     : endSquare === col + row
-                    ? "selectedStart"
+                    ? styles.selectedEnd
                     : "";
 
                 return (
@@ -57,12 +59,12 @@ export const ChessBoard = ({
 
                     {row !== "9" && row !== "0" && col !== " " && (
                       <td
-                        className={`${styles.square} ${styles[rowType]} ${styles.border} ${styles[selectedStart]} ${styles[selectedEnd]} `}
+                        className={`${styles.square} ${styles[rowType]} ${styles.border} ${selectedStart} ${selectedEnd} `}
                         id={col + row}
                         key={col + row}
                         onClick={handleSelectSquare}
                       >
-                        {selectedStart && "START"} {selectedEnd && "END"}
+                        {selectedStart === "selectedStartValid" && "START"}
                       </td>
                     )}
                   </>
