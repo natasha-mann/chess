@@ -1,13 +1,25 @@
 {
   "files": {
-    "main.css": "/chess/static/css/main.3bacd321.css",
-    "main.js": "/chess/static/js/main.2959db0b.js",
+    "main.css": "/chess/static/css/main.c90ed1f1.css",
+    "main.js": "/chess/static/js/main.4e3c3b1c.js",
+    "static/media/blackRook.jpg": "/chess/static/media/blackRook.1fb2588a65bdbddc28a1.jpg",
+    "static/media/blackPawn.jpeg": "/chess/static/media/blackPawn.1f776bc588b8cc17ac81.jpeg",
+    "static/media/blackBishop.jpg": "/chess/static/media/blackBishop.6b168f649a21ba3e2e70.jpg",
+    "static/media/whiteRook.jpg": "/chess/static/media/whiteRook.0d659ceed165aa110a02.jpg",
+    "static/media/whitePawn.jpg": "/chess/static/media/whitePawn.8dabe4027857b3d90a91.jpg",
+    "static/media/whiteKnight.jpg": "/chess/static/media/whiteKnight.fe7956cad90ceea9655b.jpg",
+    "static/media/whiteQueen.jpg": "/chess/static/media/whiteQueen.d2d5ffb423c227b30558.jpg",
+    "static/media/whiteBishop.jpg": "/chess/static/media/whiteBishop.2825f5851f91cdf7f506.jpg",
+    "static/media/blackKnight.jpg": "/chess/static/media/blackKnight.4ac0218ff6d0b6e3b79d.jpg",
+    "static/media/blackQueen.jpg": "/chess/static/media/blackQueen.fba49a048ac84973c980.jpg",
+    "static/media/whiteKing.jpg": "/chess/static/media/whiteKing.9a75869f9500686a1d47.jpg",
+    "static/media/blackKing.png": "/chess/static/media/blackKing.eac57a3c63a41410ca03.png",
     "index.html": "/chess/index.html",
-    "main.3bacd321.css.map": "/chess/static/css/main.3bacd321.css.map",
-    "main.2959db0b.js.map": "/chess/static/js/main.2959db0b.js.map"
+    "main.c90ed1f1.css.map": "/chess/static/css/main.c90ed1f1.css.map",
+    "main.4e3c3b1c.js.map": "/chess/static/js/main.4e3c3b1c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bacd321.css",
-    "static/js/main.2959db0b.js"
+    "static/css/main.c90ed1f1.css",
+    "static/js/main.4e3c3b1c.js"
   ]
 }
