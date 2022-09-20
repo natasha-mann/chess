@@ -1,6 +1,5 @@
 import { ValidMove } from "../App";
 import styles from "./chessboard.module.css";
-import { v4 as uuidv4 } from "uuid";
 
 interface ChessBoardProps {
   handleSelectSquare: (e: React.MouseEvent<HTMLElement>) => void;
