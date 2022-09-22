@@ -5,7 +5,7 @@ import blackRook from "../images/blackRook.jpg";
 import whiteBishop from "../images/whiteBishop.jpg";
 import blackBishop from "../images/blackBishop.jpg";
 import whiteKing from "../images/whiteKing.jpg";
-import blackKing from "../images/blackKing.png";
+import blackKing from "../images/blackKing.jpg";
 import whiteQueen from "../images/whiteQueen.jpg";
 import blackQueen from "../images/blackQueen.jpg";
 import whiteKnight from "../images/whiteKnight.jpg";
