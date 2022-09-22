@@ -30,9 +30,9 @@ function App() {
     setError(false);
     if (startSquare === "") {
       setStartSquare((e.target as HTMLElement).id);
+    } else {
+      setEndSquare((e.target as HTMLElement).id);
     }
-
-    setEndSquare((e.target as HTMLElement).id);
   };
 
   const handleColour = (e: React.ChangeEvent<HTMLSelectElement>) => {
