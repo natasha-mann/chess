@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import canMove, { pieces } from "./utils";
+import canMove from "./utils";
+import { pieces } from "utils/pieces";
 
 import "./App.css";
 import { ChessBoard } from "./components/ChessBoard";
+import { Piece } from "components/Piece";
 
 export enum ValidMove {
   "true",
@@ -10,7 +12,7 @@ export enum ValidMove {
   "unset",
 }
 
-const constructImageClass = (piece: string, colour: string): string => {
+export const constructImageClass = (piece: string, colour: string): string => {
   return `${colour}${piece.charAt(0).toUpperCase() + piece.slice(1)}`;
 };
 
@@ -30,9 +32,7 @@ function App() {
       setStartSquare((e.target as HTMLElement).id);
     }
 
-    if (startSquare && endSquare === "") {
-      setEndSquare((e.target as HTMLElement).id);
-    }
+    setEndSquare((e.target as HTMLElement).id);
   };
 
   const handleColour = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -40,9 +40,10 @@ function App() {
     setColour(e.target.value);
   };
 
-  const handlePiece = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const handlePiece = (e: React.MouseEvent<HTMLElement>) => {
     setError(false);
-    setPiece(e.target.value);
+
+    setPiece((e.currentTarget as HTMLElement).id);
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -74,40 +75,37 @@ function App() {
     <div className="App">
       <div className="layout">
         <form onSubmit={handleSubmit} className="form">
-          <h1>Chess Move Validator</h1>
+          <h1 className="title">Chess Move Validator</h1>
           <div className="select-container">
-            <div className="select">
-              <label htmlFor="colour">Which colour are you playing as?</label>
+            <div>
+              <h2>Which colour are you playing as?</h2>
               <select
                 id="colour"
                 onChange={handleColour}
                 className="select"
                 value={colour || ""}
                 disabled={disabled}
+                data-testid="colour"
               >
                 <option value="">Select a colour:</option>
                 <option value="white">White</option>
                 <option value="black">Black</option>
               </select>
             </div>
-            <div className="select">
-              <label htmlFor="piece">Which piece are you moving?</label>
-              <select
-                id="piece"
-                onChange={handlePiece}
-                className="select"
-                value={piece || ""}
-                disabled={disabled}
-              >
-                <option value="">Select a piece:</option>
-                {pieces.map((piece) => {
-                  return (
-                    <option key={piece} value={piece}>
-                      {piece}
-                    </option>
-                  );
-                })}
-              </select>
+
+            <h2>Choose your piece:</h2>
+            <div className="pieces-container">
+              {pieces.map((p) => {
+                return (
+                  <Piece
+                    piece={p}
+                    colour={colour}
+                    onClick={handlePiece}
+                    selected={piece}
+                    key={`${colour}${p.name}`}
+                  />
+                );
+              })}
             </div>
           </div>
 

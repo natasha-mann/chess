@@ -1,6 +1,7 @@
+import { pieces } from "./pieces";
+
 export const validColumns = ["A", "B", "C", "D", "E", "F", "G", "H"];
 export const validRows = [1, 2, 3, 4, 5, 6, 7, 8];
-export const pieces = ["pawn", "rook", "king", "queen", "knight", "bishop"];
 
 const validateInput = (
   piece: string,
@@ -14,7 +15,7 @@ const validateInput = (
     validColumns.includes(endCol) &&
     validRows.includes(startRow) &&
     validRows.includes(endRow) &&
-    pieces.includes(piece)
+    pieces.find((p) => p.name === piece)
   ) {
     return true;
   }

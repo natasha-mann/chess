@@ -14,22 +14,21 @@ Object {
           <form
             class="form"
           >
-            <h1>
+            <h1
+              class="title"
+            >
               Chess Move Validator
             </h1>
             <div
               class="select-container"
             >
-              <div
-                class="select"
-              >
-                <label
-                  for="colour"
-                >
+              <div>
+                <h2>
                   Which colour are you playing as?
-                </label>
+                </h2>
                 <select
                   class="select"
+                  data-testid="colour"
                   id="colour"
                 >
                   <option
@@ -49,54 +48,96 @@ Object {
                   </option>
                 </select>
               </div>
+              <h2>
+                Choose your piece:
+              </h2>
               <div
-                class="select"
+                class="pieces-container"
               >
-                <label
-                  for="piece"
+                <div
+                  class="pieceDiv "
+                  data-testid="pawn"
+                  id="pawn"
                 >
-                  Which piece are you moving?
-                </label>
-                <select
-                  class="select"
-                  id="piece"
+                  <img
+                    alt="pawn"
+                    class="piece"
+                    src="whitePawn.jpg"
+                  />
+                  <label>
+                    Pawn
+                  </label>
+                </div>
+                <div
+                  class="pieceDiv "
+                  data-testid="rook"
+                  id="rook"
                 >
-                  <option
-                    value=""
-                  >
-                    Select a piece:
-                  </option>
-                  <option
-                    value="pawn"
-                  >
-                    pawn
-                  </option>
-                  <option
-                    value="rook"
-                  >
-                    rook
-                  </option>
-                  <option
-                    value="king"
-                  >
-                    king
-                  </option>
-                  <option
-                    value="queen"
-                  >
-                    queen
-                  </option>
-                  <option
-                    value="knight"
-                  >
-                    knight
-                  </option>
-                  <option
-                    value="bishop"
-                  >
-                    bishop
-                  </option>
-                </select>
+                  <img
+                    alt="rook"
+                    class="piece"
+                    src="whiteRook.jpg"
+                  />
+                  <label>
+                    Rook
+                  </label>
+                </div>
+                <div
+                  class="pieceDiv "
+                  data-testid="bishop"
+                  id="bishop"
+                >
+                  <img
+                    alt="bishop"
+                    class="piece"
+                    src="whiteBishop.jpg"
+                  />
+                  <label>
+                    Bishop
+                  </label>
+                </div>
+                <div
+                  class="pieceDiv "
+                  data-testid="king"
+                  id="king"
+                >
+                  <img
+                    alt="king"
+                    class="piece"
+                    src="whiteKing.jpg"
+                  />
+                  <label>
+                    King
+                  </label>
+                </div>
+                <div
+                  class="pieceDiv "
+                  data-testid="queen"
+                  id="queen"
+                >
+                  <img
+                    alt="queen"
+                    class="piece"
+                    src="whiteQueen.jpg"
+                  />
+                  <label>
+                    Queen
+                  </label>
+                </div>
+                <div
+                  class="pieceDiv "
+                  data-testid="knight"
+                  id="knight"
+                >
+                  <img
+                    alt="knight"
+                    class="piece"
+                    src="whiteKnight.jpg"
+                  />
+                  <label>
+                    Knight
+                  </label>
+                </div>
               </div>
             </div>
             <h3
@@ -186,11 +227,11 @@ Object {
                 <tr
                   class="row"
                 >
-                  <td
+                  <th
                     class="square"
                   >
                     8
-                  </td>
+                  </th>
                   <td
                     class="square even border   "
                     data-testid="A8"
@@ -231,20 +272,20 @@ Object {
                     data-testid="H8"
                     id="H8"
                   />
-                  <td
+                  <th
                     class="square"
                   >
                     8
-                  </td>
+                  </th>
                 </tr>
                 <tr
                   class="row"
                 >
-                  <td
+                  <th
                     class="square"
                   >
                     7
-                  </td>
+                  </th>
                   <td
                     class="square odd border   "
                     data-testid="A7"
@@ -285,20 +326,20 @@ Object {
                     data-testid="H7"
                     id="H7"
                   />
-                  <td
+                  <th
                     class="square"
                   >
                     7
-                  </td>
+                  </th>
                 </tr>
                 <tr
                   class="row"
                 >
-                  <td
+                  <th
                     class="square"
                   >
                     6
-                  </td>
+                  </th>
                   <td
                     class="square even border   "
                     data-testid="A6"
@@ -339,20 +380,20 @@ Object {
                     data-testid="H6"
                     id="H6"
                   />
-                  <td
+                  <th
                     class="square"
                   >
                     6
-                  </td>
+                  </th>
                 </tr>
                 <tr
                   class="row"
                 >
-                  <td
+                  <th
                     class="square"
                   >
                     5
-                  </td>
+                  </th>
                   <td
                     class="square odd border   "
                     data-testid="A5"
@@ -393,20 +434,20 @@ Object {
                     data-testid="H5"
                     id="H5"
                   />
-                  <td
+                  <th
                     class="square"
                   >
                     5
-                  </td>
+                  </th>
                 </tr>
                 <tr
                   class="row"
                 >
-                  <td
+                  <th
                     class="square"
                   >
                     4
-                  </td>
+                  </th>
                   <td
                     class="square even border   "
                     data-testid="A4"
@@ -447,20 +488,20 @@ Object {
                     data-testid="H4"
                     id="H4"
                   />
-                  <td
+                  <th
                     class="square"
                   >
                     4
-                  </td>
+                  </th>
                 </tr>
                 <tr
                   class="row"
                 >
-                  <td
+                  <th
                     class="square"
                   >
                     3
-                  </td>
+                  </th>
                   <td
                     class="square odd border   "
                     data-testid="A3"
@@ -501,20 +542,20 @@ Object {
                     data-testid="H3"
                     id="H3"
                   />
-                  <td
+                  <th
                     class="square"
                   >
                     3
-                  </td>
+                  </th>
                 </tr>
                 <tr
                   class="row"
                 >
-                  <td
+                  <th
                     class="square"
                   >
                     2
-                  </td>
+                  </th>
                   <td
                     class="square even border   "
                     data-testid="A2"
@@ -555,20 +596,20 @@ Object {
                     data-testid="H2"
                     id="H2"
                   />
-                  <td
+                  <th
                     class="square"
                   >
                     2
-                  </td>
+                  </th>
                 </tr>
                 <tr
                   class="row"
                 >
-                  <td
+                  <th
                     class="square"
                   >
                     1
-                  </td>
+                  </th>
                   <td
                     class="square odd border   "
                     data-testid="A1"
@@ -609,11 +650,11 @@ Object {
                     data-testid="H1"
                     id="H1"
                   />
-                  <td
+                  <th
                     class="square"
                   >
                     1
-                  </td>
+                  </th>
                 </tr>
                 <tr
                   class="row"
@@ -686,22 +727,21 @@ Object {
         <form
           class="form"
         >
-          <h1>
+          <h1
+            class="title"
+          >
             Chess Move Validator
           </h1>
           <div
             class="select-container"
           >
-            <div
-              class="select"
-            >
-              <label
-                for="colour"
-              >
+            <div>
+              <h2>
                 Which colour are you playing as?
-              </label>
+              </h2>
               <select
                 class="select"
+                data-testid="colour"
                 id="colour"
               >
                 <option
@@ -721,54 +761,96 @@ Object {
                 </option>
               </select>
             </div>
+            <h2>
+              Choose your piece:
+            </h2>
             <div
-              class="select"
+              class="pieces-container"
             >
-              <label
-                for="piece"
+              <div
+                class="pieceDiv "
+                data-testid="pawn"
+                id="pawn"
               >
-                Which piece are you moving?
-              </label>
-              <select
-                class="select"
-                id="piece"
+                <img
+                  alt="pawn"
+                  class="piece"
+                  src="whitePawn.jpg"
+                />
+                <label>
+                  Pawn
+                </label>
+              </div>
+              <div
+                class="pieceDiv "
+                data-testid="rook"
+                id="rook"
               >
-                <option
-                  value=""
-                >
-                  Select a piece:
-                </option>
-                <option
-                  value="pawn"
-                >
-                  pawn
-                </option>
-                <option
-                  value="rook"
-                >
-                  rook
-                </option>
-                <option
-                  value="king"
-                >
-                  king
-                </option>
-                <option
-                  value="queen"
-                >
-                  queen
-                </option>
-                <option
-                  value="knight"
-                >
-                  knight
-                </option>
-                <option
-                  value="bishop"
-                >
-                  bishop
-                </option>
-              </select>
+                <img
+                  alt="rook"
+                  class="piece"
+                  src="whiteRook.jpg"
+                />
+                <label>
+                  Rook
+                </label>
+              </div>
+              <div
+                class="pieceDiv "
+                data-testid="bishop"
+                id="bishop"
+              >
+                <img
+                  alt="bishop"
+                  class="piece"
+                  src="whiteBishop.jpg"
+                />
+                <label>
+                  Bishop
+                </label>
+              </div>
+              <div
+                class="pieceDiv "
+                data-testid="king"
+                id="king"
+              >
+                <img
+                  alt="king"
+                  class="piece"
+                  src="whiteKing.jpg"
+                />
+                <label>
+                  King
+                </label>
+              </div>
+              <div
+                class="pieceDiv "
+                data-testid="queen"
+                id="queen"
+              >
+                <img
+                  alt="queen"
+                  class="piece"
+                  src="whiteQueen.jpg"
+                />
+                <label>
+                  Queen
+                </label>
+              </div>
+              <div
+                class="pieceDiv "
+                data-testid="knight"
+                id="knight"
+              >
+                <img
+                  alt="knight"
+                  class="piece"
+                  src="whiteKnight.jpg"
+                />
+                <label>
+                  Knight
+                </label>
+              </div>
             </div>
           </div>
           <h3
@@ -858,11 +940,11 @@ Object {
               <tr
                 class="row"
               >
-                <td
+                <th
                   class="square"
                 >
                   8
-                </td>
+                </th>
                 <td
                   class="square even border   "
                   data-testid="A8"
@@ -903,20 +985,20 @@ Object {
                   data-testid="H8"
                   id="H8"
                 />
-                <td
+                <th
                   class="square"
                 >
                   8
-                </td>
+                </th>
               </tr>
               <tr
                 class="row"
               >
-                <td
+                <th
                   class="square"
                 >
                   7
-                </td>
+                </th>
                 <td
                   class="square odd border   "
                   data-testid="A7"
@@ -957,20 +1039,20 @@ Object {
                   data-testid="H7"
                   id="H7"
                 />
-                <td
+                <th
                   class="square"
                 >
                   7
-                </td>
+                </th>
               </tr>
               <tr
                 class="row"
               >
-                <td
+                <th
                   class="square"
                 >
                   6
-                </td>
+                </th>
                 <td
                   class="square even border   "
                   data-testid="A6"
@@ -1011,20 +1093,20 @@ Object {
                   data-testid="H6"
                   id="H6"
                 />
-                <td
+                <th
                   class="square"
                 >
                   6
-                </td>
+                </th>
               </tr>
               <tr
                 class="row"
               >
-                <td
+                <th
                   class="square"
                 >
                   5
-                </td>
+                </th>
                 <td
                   class="square odd border   "
                   data-testid="A5"
@@ -1065,20 +1147,20 @@ Object {
                   data-testid="H5"
                   id="H5"
                 />
-                <td
+                <th
                   class="square"
                 >
                   5
-                </td>
+                </th>
               </tr>
               <tr
                 class="row"
               >
-                <td
+                <th
                   class="square"
                 >
                   4
-                </td>
+                </th>
                 <td
                   class="square even border   "
                   data-testid="A4"
@@ -1119,20 +1201,20 @@ Object {
                   data-testid="H4"
                   id="H4"
                 />
-                <td
+                <th
                   class="square"
                 >
                   4
-                </td>
+                </th>
               </tr>
               <tr
                 class="row"
               >
-                <td
+                <th
                   class="square"
                 >
                   3
-                </td>
+                </th>
                 <td
                   class="square odd border   "
                   data-testid="A3"
@@ -1173,20 +1255,20 @@ Object {
                   data-testid="H3"
                   id="H3"
                 />
-                <td
+                <th
                   class="square"
                 >
                   3
-                </td>
+                </th>
               </tr>
               <tr
                 class="row"
               >
-                <td
+                <th
                   class="square"
                 >
                   2
-                </td>
+                </th>
                 <td
                   class="square even border   "
                   data-testid="A2"
@@ -1227,20 +1309,20 @@ Object {
                   data-testid="H2"
                   id="H2"
                 />
-                <td
+                <th
                   class="square"
                 >
                   2
-                </td>
+                </th>
               </tr>
               <tr
                 class="row"
               >
-                <td
+                <th
                   class="square"
                 >
                   1
-                </td>
+                </th>
                 <td
                   class="square odd border   "
                   data-testid="A1"
@@ -1281,11 +1363,11 @@ Object {
                   data-testid="H1"
                   id="H1"
                 />
-                <td
+                <th
                   class="square"
                 >
                   1
-                </td>
+                </th>
               </tr>
               <tr
                 class="row"

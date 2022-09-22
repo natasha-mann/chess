@@ -1,5 +1,7 @@
 import { ValidMove } from "../App";
-import styles from "./chessboard.module.css";
+import styles from "./chessBoard.module.css";
+import { ChessSquare } from "./ChessSquare";
+import { v4 as uuidv4 } from "uuid";
 
 interface ChessBoardProps {
   handleSelectSquare: (e: React.MouseEvent<HTMLElement>) => void;
@@ -23,10 +25,10 @@ export const ChessBoard = ({
   return (
     <table className={styles.table}>
       <tbody>
-        {rows.map((row, index) => {
+        {rows.map((row) => {
           return (
-            <tr key={`${row}${index}`} className={styles.row}>
-              {columns.map((col, i) => {
+            <tr key={uuidv4()} className={styles.row}>
+              {columns.map((col) => {
                 const rowType = parseInt(row) % 2 === 0 ? "even" : "odd";
 
                 const selectedStart =
@@ -44,31 +46,15 @@ export const ChessBoard = ({
                     : "";
 
                 return (
-                  <>
-                    {(row === "9" || row === "0") && (
-                      <th key={`${index}${row}${i}`} className={styles.square}>
-                        {col}
-                      </th>
-                    )}
-
-                    {row !== "9" && row !== "0" && col === " " && (
-                      <td className={styles.square} key={`${row}${i}${index}`}>
-                        {row}
-                      </td>
-                    )}
-
-                    {row !== "9" && row !== "0" && col !== " " && (
-                      <td
-                        className={`${styles.square} ${styles[rowType]} ${styles.border} ${selectedStart} ${selectedEnd} `}
-                        id={col + row}
-                        data-testid={col + row}
-                        key={`${row}${i}${col}`}
-                        onClick={handleSelectSquare}
-                      >
-                        {selectedStart === "selectedStartValid" && "START"}
-                      </td>
-                    )}
-                  </>
+                  <ChessSquare
+                    rowType={rowType}
+                    selectedStart={selectedStart}
+                    selectedEnd={selectedEnd}
+                    row={row}
+                    col={col}
+                    handleSelectSquare={handleSelectSquare}
+                    key={uuidv4()}
+                  />
                 );
               })}
             </tr>

@@ -14,14 +14,19 @@
   padding: 0;
 }
 
-.border {
-  border: 1px solid black;
-}
-
 .even:nth-child(even),
 .odd:nth-child(odd) {
   background-color: black;
   color: white;
+}
+
+.even:nth-child(odd),
+.odd:nth-child(even) {
+  background-color: white;
+}
+
+.border {
+  border: 1px solid black;
 }
 
 .backgroundImg {
@@ -84,4 +89,29 @@
 
 .whiteKnight {
   background-image: url("../images/whiteKnight.jpg");
+}
+
+.pieceDiv {
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border: 2px white solid;
+}
+
+.piece {
+  height: 80px;
+  width: 80px;
+}
+
+.pieceDiv:hover {
+  cursor: pointer;
+  border: 2px grey solid;
+  border-radius: 10px;
+}
+
+.selected-piece {
+  border: 1px darkblue solid;
+  background-color: grey;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
 }

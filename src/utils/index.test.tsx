@@ -1,6 +1,5 @@
 import canMove from ".";
 import { describe, expect } from "@jest/globals";
-import "@testing-library/jest-dom";
 
 describe("Valid chess moves", () => {
   it("should throw an error if an invalid start position is entered", () => {
