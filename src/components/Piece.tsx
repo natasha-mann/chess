@@ -1,5 +1,5 @@
 import { IPiece } from "utils/pieces";
-import styles from "./chessBoard.module.css";
+import styles from "./chess.module.css";
 
 interface PieceProps {
   piece: IPiece;

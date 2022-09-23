@@ -1,5 +1,5 @@
 import { ValidMove } from "../App";
-import styles from "./chessBoard.module.css";
+import styles from "./chess.module.css";
 import { ChessSquare } from "./ChessSquare";
 import { v4 as uuidv4 } from "uuid";
 

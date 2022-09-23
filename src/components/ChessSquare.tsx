@@ -1,4 +1,4 @@
-import styles from "./chessBoard.module.css";
+import styles from "./chess.module.css";
 
 interface ChessSquareProps {
   rowType: string;
